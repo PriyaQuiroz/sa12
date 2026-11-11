@@ -1,0 +1,92 @@
+body {
+  background-color: #fdf8f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-producto {
+  background-color: #ffffff;
+  border: 2px solid #f3e8e2;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(190, 24, 93, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+}
+
+.card-producto:hover {
+  transform: translateY(-6px);
+  border-color: #db2777;
+}
+
+.card-imagen-contenedor {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #fff1f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.card-precio {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #be185d;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.card-contenido {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-categoria {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #be185d;
+  background-color: #fce7f3;
+  padding: 4px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.card-titulo {
+  margin: 0;
+  font-size: 17px;
+  color: #1f2937;
+}
+
+.card-marca,
+.card-stock {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
